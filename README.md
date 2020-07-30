@@ -13,6 +13,7 @@ COMMAND MODE (파란색)
 * b: 아래로 셀 추가
 * dd: 셀 삭제
 * m: 마크다운으로 변경
+* shift+m : 아래 셀과 합치기
 * esc: 모드 전환
 
 EDIT MODE (초록색)
