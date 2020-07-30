@@ -19,7 +19,8 @@ EDIT MODE (초록색)
 ---
 * ctrl+Enter: cell 실행
 * shift+Enter: cell 실행 + 아래로
-* ctrl+/ : 주석 처리
+* ctrl+/: 주석 처리
+* tab: 
 * 기본적인 복붙같은건 동일
 
 추후 추가 예정...
