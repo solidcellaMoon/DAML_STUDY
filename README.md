@@ -1,9 +1,16 @@
-DAML_STUDY
+studynote
 ===
 
-데이터분석과 머신러닝을 위한 스터디 repository
+공부내용을 정리하는 저장소입니다.
 
-Jupyter Notebook 단축키 모음
+
+데이터 분석 & 머신러닝
+---
+* numpy
+* pandas
+
+
+참고: Jupyter Notebook 단축키 모음
 ---
 참고용: https://kkokkilkon.tistory.com/151
 
