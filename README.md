@@ -3,11 +3,9 @@ studynote
 
 공부내용을 정리하는 저장소입니다.
 
-
-데이터 분석 & 머신러닝
----
 * numpy
 * pandas
+* 자료구조 복습
 
 
 참고: Jupyter Notebook 단축키 모음
