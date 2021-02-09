@@ -1,22 +1,25 @@
 #include <iostream>
 
-namespace A{
-    void Add(){
-        printf("namespace A의 Add() 호출\n");
-    }
+//★
+using namespace std;
 
-    void Count(){
-        printf("namespace A의 Count() 호출\n");
-    }
+void func(int a){
+    cout << "--void func(int a)--" << endl;
 }
 
-using A::Add;
+void func(int a, int b){
+    cout << "--void func(int a, int b)--" << endl;
+}
+
+void func(char ch){
+    cout << "--void func(char ch)--" << endl;
+}
 
 int main(){
 
-    Add();
-    A::Count();
-    //그냥 Count();라고 쓰면 명시되지 않았기에 에러
+    func(4);
+    func(5,6);
+    func('a');
 
     return 0;
 }
