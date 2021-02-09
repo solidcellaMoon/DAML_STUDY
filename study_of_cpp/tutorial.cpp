@@ -1,25 +1,33 @@
 #include <iostream>
 
-//★
 using namespace std;
 
-void func(int a){
-    cout << "--void func(int a)--" << endl;
-}
+int main() {
+    int studentNum, total = 0;
+    int* studentScore;
+    int i;
 
-void func(int a, int b){
-    cout << "--void func(int a, int b)--" << endl;
-}
+    //printf("학생 수를 입력하세요: ");
+    cout << "학생 수를 입력하세요: ";
+    //scanf("%d", &studentNum);
+    cin >> studentNum;
+    //studentScore = (int *)malloc(sizeof(int)*studentNum);
+    studentScore = new int[studentNum];
 
-void func(char ch){
-    cout << "--void func(char ch)--" << endl;
-}
+    for (i=0; i<studentNum; i++){
+        //printf("%d번 학생의 점수: ", i+1);
+        cout << i + 1 << "번 학생의 점수: ";
+        //scanf("%d",&studentScore[i]);
+        cin >> studentScore[i];
+        //total += studentScore[i];
+        total += studentScore[i];
+    }
 
-int main(){
-
-    func(4);
-    func(5,6);
-    func('a');
+    //printf("모든 학생의 평균: %d\n", total/studentNum);
+    cout << "모든 학생의 평균: " << total / studentNum << endl;
+    
+    //free(studentScore);
+    delete []studentScore;
 
     return 0;
 }
