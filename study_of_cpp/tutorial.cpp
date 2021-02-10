@@ -2,32 +2,37 @@
 
 using namespace std;
 
-int main() {
-    int studentNum, total = 0;
-    int* studentScore;
-    int i;
+struct student
+{
+    private:
+        int id;
+        char *name;
+        float precentage;
 
-    //printf("학생 수를 입력하세요: ");
-    cout << "학생 수를 입력하세요: ";
-    //scanf("%d", &studentNum);
-    cin >> studentNum;
-    //studentScore = (int *)malloc(sizeof(int)*studentNum);
-    studentScore = new int[studentNum];
+    public:
+        void Show();
+        void SetInfo(int _id, char * _name, float _percentage);
+        
+}; //구조체 뒤에는 세미콜론을 씁니다.
 
-    for (i=0; i<studentNum; i++){
-        //printf("%d번 학생의 점수: ", i+1);
-        cout << i + 1 << "번 학생의 점수: ";
-        //scanf("%d",&studentScore[i]);
-        cin >> studentScore[i];
-        //total += studentScore[i];
-        total += studentScore[i];
+void student::Show(){
+    cout << "아이디: " << id << endl;
+    cout << "이름: " << name << endl;
+    cout << "백분율 " << precentage << endl;
     }
 
-    //printf("모든 학생의 평균: %d\n", total/studentNum);
-    cout << "모든 학생의 평균: " << total / studentNum << endl;
-    
-    //free(studentScore);
-    delete []studentScore;
+void student::SetInfo(int _id, char * _name, float _percentage){
+    id = _id;
+    name = _name;
+    precentage = _percentage;
+}
+
+int main() {
+
+    student s;
+
+    s.SetInfo(1, "kkk", 90.5);
+    s.Show();
 
     return 0;
 }
