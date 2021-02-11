@@ -2,37 +2,51 @@
 
 using namespace std;
 
-struct student
+class student
 {
     private:
-        int id;
-        char *name;
-        float precentage;
+        char * name;
+        int age;
+        char * hobby;
 
     public:
-        void Show();
-        void SetInfo(int _id, char * _name, float _percentage);
+        void ShowInfo();
+        void SetInfo(char * _name, int _age, char * _hobby);
+        void Study();
+        void Sleep();
         
-}; //구조체 뒤에는 세미콜론을 씁니다.
+}; //클래스 뒤에는 세미콜론을 씁니다.
 
-void student::Show(){
-    cout << "아이디: " << id << endl;
-    cout << "이름: " << name << endl;
-    cout << "백분율 " << precentage << endl;
+void student::ShowInfo(){
+    cout << "이름: " << name << ", 나이: " << age << ", 취미: " << hobby << endl;
     }
 
-void student::SetInfo(int _id, char * _name, float _percentage){
-    id = _id;
+void student::SetInfo(char * _name, int _age, char *_hobby){
     name = _name;
-    precentage = _percentage;
+    age = _age;
+    hobby = _hobby;
 }
+
+void student::Study(){
+    cout << "공부중" << endl;
+}
+
+void student::Sleep(){
+    cout << "자는중" << endl;
+}
+
 
 int main() {
 
-    student s;
+    student stu;
 
-    s.SetInfo(1, "kkk", 90.5);
-    s.Show();
+    stu.SetInfo("kkk", 10, "게임");
+    stu.ShowInfo();
+
+    for(int i = 0; i < 2; i++){
+        stu.Study();
+        stu.Sleep();
+    }
 
     return 0;
 }
