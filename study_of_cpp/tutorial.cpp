@@ -2,51 +2,29 @@
 
 using namespace std;
 
-class student
-{
+class Myclass{
     private:
-        char * name;
-        int age;
-        char * hobby;
-
+        int num1;
+        int num2;
     public:
-        void ShowInfo();
-        void SetInfo(char * _name, int _age, char * _hobby);
-        void Study();
-        void Sleep();
-        
-}; //클래스 뒤에는 세미콜론을 씁니다.
-
-void student::ShowInfo(){
-    cout << "이름: " << name << ", 나이: " << age << ", 취미: " << hobby << endl;
-    }
-
-void student::SetInfo(char * _name, int _age, char *_hobby){
-    name = _name;
-    age = _age;
-    hobby = _hobby;
-}
-
-void student::Study(){
-    cout << "공부중" << endl;
-}
-
-void student::Sleep(){
-    cout << "자는중" << endl;
-}
-
+        Myclass(int a, int b){
+            num1 = a;
+            num2 = b;
+        }
+        void ShowData(){
+            cout << "num1: " << num1 << " num2: " << num2 << endl;
+        }
+};
 
 int main() {
 
-    student stu;
+    Myclass m1(50,40);
+    Myclass m2 = m1;
+    Myclass m3(m2);
 
-    stu.SetInfo("kkk", 10, "게임");
-    stu.ShowInfo();
-
-    for(int i = 0; i < 2; i++){
-        stu.Study();
-        stu.Sleep();
-    }
+    m1.ShowData();
+    m2.ShowData();
+    m3.ShowData();
 
     return 0;
 }
