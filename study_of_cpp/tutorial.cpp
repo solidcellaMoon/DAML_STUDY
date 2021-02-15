@@ -1,30 +1,37 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
 class Myclass{
     private:
-        int num1;
-        int num2;
+        char *str;
     public:
-        Myclass(int a, int b){
-            num1 = a;
-            num2 = b;
+        Myclass(const char *aStr){
+            str = new char[strlen(aStr)+1];
+            strcpy(str, aStr);
+        }
+        Myclass(const Myclass& mc){ //추가한 내용
+            str = new char[strlen(mc.str)+1];
+            strcpy(str, mc.str);
+        }
+        ~Myclass(){
+            delete []str;
+            cout << "~Myclass() called" << endl;
         }
         void ShowData(){
-            cout << "num1: " << num1 << " num2: " << num2 << endl;
+            cout << "str: " << str << endl;
         }
 };
 
+
 int main() {
 
-    Myclass m1(50,40);
-    Myclass m2 = m1;
-    Myclass m3(m2);
+    Myclass mc1("MyClass!");
+    Myclass mc2 = mc1;
 
-    m1.ShowData();
-    m2.ShowData();
-    m3.ShowData();
+    mc1.ShowData();
+    mc2.ShowData();
 
     return 0;
 }
