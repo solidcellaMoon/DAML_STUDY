@@ -5,6 +5,30 @@ https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playli
 
 
 ``` python
+from collections import defaultdict
+
+def sockMerchant(n, ar):
+    dics = defaultdict(list)
+    answer = 0
+
+    for i in ar: #딕셔너리로 종류별로 저장
+        dics[i].append(i)
+        
+    for key in dics.keys():
+        lens = len(dics[key]) #각 종류가 몇개씩 있나 확인
+        if lens > 1: #1개 이상이면 정답에 속함
+            if lens % 2 != 0: #홀수면 1개 지움
+                lens -= 1
+            answer += int(lens/2) #페어이기에 /2해서 저장
+
+    return answer
+```
+
+
+
+
+
+``` python
 #!/bin/python3
 
 import math
