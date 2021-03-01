@@ -8,18 +8,17 @@ https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playli
 from collections import defaultdict
 
 def sockMerchant(n, ar):
-    dics = defaultdict(list)
+    dics = defaultdict(list) #종류를 저장할 딕셔너리
     answer = 0
-
+    
     for i in ar: #딕셔너리로 종류별로 저장
         dics[i].append(i)
         
     for key in dics.keys():
         lens = len(dics[key]) #각 종류가 몇개씩 있나 확인
-        if lens > 1: #1개 이상이면 정답에 속함
-            if lens % 2 != 0: #홀수면 1개 지움
-                lens -= 1
+        if lens > 1: #한 종류의 개수가 2개 이상이면 정답에 속함
             answer += int(lens/2) #페어이기에 /2해서 저장
+            #lens가 홀수여도, int형으로 바꿔 저장하기에 문제없음
 
     return answer
 ```
@@ -41,19 +40,17 @@ from collections import defaultdict
 
 # Complete the sockMerchant function below.
 def sockMerchant(n, ar):
-    dics = defaultdict(list)
+    dics = defaultdict(list) #종류를 저장할 딕셔너리
     answer = 0
-
-    for i in ar:
+    
+    for i in ar: #딕셔너리로 종류별로 저장
         dics[i].append(i)
         
     for key in dics.keys():
-        lens = len(dics[key])
-        
-        if lens > 1:
-            if lens % 2 != 0:
-                lens -= 1
-            answer += int(lens/2)
+        lens = len(dics[key]) #각 종류가 몇개씩 있나 확인
+        if lens > 1: #한 종류의 개수가 2개 이상이면 정답에 속함
+            answer += int(lens/2) #페어이기에 /2해서 저장
+            #lens가 홀수여도, int형으로 바꿔 저장하기에 문제없음
 
     return answer
     
