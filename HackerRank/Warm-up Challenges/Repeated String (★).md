@@ -2,11 +2,11 @@
 
 
 
+**[[링크]](https://www.hackerrank.com/challenges/repeated-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup)**
+
 ㅠㅠㅠㅠ....
 
 진짜 터무니없는 상황에서 돌아가는지...?
-
-https://www.hackerrank.com/challenges/repeated-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
 
 
 

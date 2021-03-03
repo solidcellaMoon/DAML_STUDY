@@ -2,9 +2,9 @@
 
 
 
-배열에서 예외처리 하는 습관을 잘 들여야 한다...
+**[[링크]](https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup)**
 
-https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
+배열에서 예외처리 하는 습관을 잘 들여야 한다...
 
 
 

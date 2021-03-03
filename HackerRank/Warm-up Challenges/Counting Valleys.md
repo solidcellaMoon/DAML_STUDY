@@ -2,9 +2,9 @@
 
 
 
-화려하게 풀려하지 말고 문제를 찬찬히 코드로 옮기는게 가능한지 보자...
+**[[링크]](https://www.hackerrank.com/challenges/counting-valleys/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup)**
 
-https://www.hackerrank.com/challenges/counting-valleys/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
+화려하게 풀려하지 말고 문제를 찬찬히 코드로 옮기는게 가능한지 보자...
 
 
 
