@@ -73,8 +73,6 @@
 
 ### Program 2-4
 
-<img src="C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20210312214255165.png" alt="image-20210312214255165" style="zoom:50%;" />
-
 > 프로세스 4개 또는 5개를 사용하여 실행할 때 문제없이 실행되어야 한다.
 >
 > 각 프로세스가 담당할 구역은 임의로 정할 수 있으나, 프로세스당 workload는 균등해야 한다. 
