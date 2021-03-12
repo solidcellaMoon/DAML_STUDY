@@ -73,7 +73,10 @@
 
 ### Program 2-4
 
+<img src="C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20210312214255165.png" alt="image-20210312214255165" style="zoom:50%;" />
+
 > 프로세스 4개 또는 5개를 사용하여 실행할 때 문제없이 실행되어야 한다.
+>
 > 각 프로세스가 담당할 구역은 임의로 정할 수 있으나, 프로세스당 workload는 균등해야 한다. 
 >
 > ​	1. 방의 크기는 102x102이다. 가장자리 외벽을 제외한 내부의 크기는 100x100이다.
@@ -91,6 +94,9 @@
 * [Source Code]()
 
 ## Program 3
+
+<img src="C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20210312214348772.png" alt="image-20210312214348772" style="zoom:50%;" />
+
 >  MapReduce wordcount 프로그램을 value 기준으로 내림차순으로 정렬하시오.
 
 * [original wordcount](https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#Example:_WordCount_v1.0)
