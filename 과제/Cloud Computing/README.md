@@ -6,7 +6,7 @@
 >
 > 이 배열에 홀수가 몇 개 들어있는지 계산하는 효율적인 MPI 프로그램을 작성하시오.
 
-* [Source Code]()
+* [Source Code](https://github.com/solidcellaMoon/studynote/blob/master/%EA%B3%BC%EC%A0%9C/Cloud%20Computing/HW1.c)
 
 ## Program 2
 ### Program 2-1
@@ -19,7 +19,7 @@
 >
 > ​	3. 프로세스 1은 (대표로) 자신의 배열 A[ ][ ]를 화면에 출력한다.
 
-* [Source Code]()
+* [Source Code](https://github.com/solidcellaMoon/studynote/blob/master/%EA%B3%BC%EC%A0%9C/Cloud%20Computing/HW2_1.c)
 
 ---
 
@@ -39,7 +39,7 @@
 >
 > ​	5. 프로세스3은 (대표로) 자신의 배열 B[ ][ ]를 화면에 출력한다.
 
-* [Source Code]()
+* [Source Code](https://github.com/solidcellaMoon/studynote/blob/master/%EA%B3%BC%EC%A0%9C/Cloud%20Computing/HW2_2.c)
 
 ---
 
@@ -65,7 +65,7 @@
 >
 > ​	8. 프로세스 1은 배열 B를 화면에 출력한다.
 
-* [Source Code]()
+* [Source Code](https://github.com/solidcellaMoon/studynote/blob/master/%EA%B3%BC%EC%A0%9C/Cloud%20Computing/HW2_3.c)
 
 ---
 
@@ -89,15 +89,15 @@
 >
 > ​	6. 한참 후의 방의 온도 계산이 끝나고 나면, 사용자가 지정하는 구역의 온도를 화면에 출력해준다.
 
-* [Source Code]()
+* [Source Code](https://github.com/solidcellaMoon/studynote/blob/master/%EA%B3%BC%EC%A0%9C/Cloud%20Computing/HW2_4.c)
 
 ## Program 3
 
-<img src="C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20210312214348772.png" alt="image-20210312214348772" style="zoom:50%;" />
+<img src="https://user-images.githubusercontent.com/52763081/110941801-3ac36780-837c-11eb-8bbd-c9cf0ec201a6.png" style="zoom:50%;" />
 
 >  MapReduce wordcount 프로그램을 value 기준으로 내림차순으로 정렬하시오.
 
 * [original wordcount](https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#Example:_WordCount_v1.0)
 
-* [Source Code]()
+* [Source Code](https://github.com/solidcellaMoon/studynote/blob/master/%EA%B3%BC%EC%A0%9C/Cloud%20Computing/HW4_WordCount.java)
 
